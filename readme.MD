@@ -1,6 +1,9 @@
 # PostMission Server
 
-## 프로젝트 소개
+## 프로젝트 소개 및 실행화면
+
+* [move to front](https://github.com/post-mission/frontend)
+  * 소개와 실행화면 관련 내용은 front repository에 정리 돼 있습니다.
 
 ## 설치 및 구동 방법
 
@@ -49,7 +52,7 @@ implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-aws', version: '2.2.1.RELEASE'
 
 implementation 'org.springframework.boot:spring-boot-starter-quartz'
-```
+``` 
 
 ## 서버 구조
 
