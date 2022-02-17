@@ -25,6 +25,32 @@ java -jar [snapshot.jar]
 
 ![dependency](./files/dependency.png)
 
+### gradle 의존관계
+
+```java
+implementation group: 'com.auth0', name: 'java-jwt', version: '3.18.2'
+implementation 'org.springframework.boot:spring-boot-starter-security'
+
+implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+implementation 'org.springframework.boot:spring-boot-starter-web'
+compileOnly 'org.projectlombok:lombok'
+developmentOnly 'org.springframework.boot:spring-boot-devtools'
+runtimeOnly 'mysql:mysql-connector-java'
+annotationProcessor 'org.projectlombok:lombok'
+testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+
+implementation 'org.springframework.boot:spring-boot-starter-mail'
+implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-aws', version: '2.2.1.RELEASE'
+
+implementation 'org.springframework.boot:spring-boot-starter-quartz'
+```
+
 ## 서버 구조
 
 ![server](./files/architecture.png)
