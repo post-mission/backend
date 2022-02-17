@@ -2,7 +2,6 @@
 
 ## 프로젝트 소개
 
-
 ## 설치 및 구동 방법
 
 ```
@@ -22,30 +21,21 @@ java -jar [snapshot.jar]
 
 ![erd](./files/erd.png)
 
-## 총 4회에 걸쳐 jpa 스터디 진행
+## dependency
 
-* [jpa 스터디 1차](./files/jpa-study-1차.md)
-  * jpa의 동작원리 및 영속성 컨텍스트
-* [jpa 스터디 2차](./files/jpa-study-2차.md)
-  * 연관관계 mapping과 다양한 annotation
-* [jpa 스터디 3차](./files/jpa-study-3차.md)
-  * proxy와 지연로딩. N+1문제
-* [jpa 스터디 4차](./files/jpa-study-4차.md)
-  * Spring data jpa
+![dependency](./files/dependency.png)
 
-## 서버 배포 구조
+## 서버 구조
+
+![server](./files/architecture.png)
+
+### 배포 자동화
 
 ![이미지](./files/structure.png)
 
+> 원래는 위와 같은 배포 자동화를 구현하려고 했으나, 프로젝트 시간상의 문제로 배포 자동화는 구현하지 못하였습니다.
+
 * [출처 블로그](https://velog.io/@haeny01/AWS-Jenkins%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-Docker-x-SpringBoot-CICD-%EA%B5%AC%EC%B6%95)
-
-## 이번 프로트에서의 기술적 목표
-
-1. 회원 인증(소셜 로그인, JWT) : spring security
-2. open api에서 받아오는 다량의 데이터 저장 및 필요 데이터 반환
-3. open api 데이터 갱신 자동화 : spring batch, quartz
-4. 배포 및 배포 자동화 : nginx, jenkins, docker
-5. 회원 추천 시스템
 
 ## 팀원 및 역할 분담
 
@@ -61,7 +51,35 @@ java -jar [snapshot.jar]
 
 3. 임형준
 
-* 회원 인증 처리 (spring security, 소셜 로그인)
+* 회원 인증 처리 (spring security)
 * 배포 관리
 
+___
 
+# 프로젝트 진행 기록
+
+## JPA STUDY
+
+> jpa의 핵심 원리를 파악하고 사용하는 것이 중요하다고 생각해서 총 4회에 걸쳐서 스터디를 진행하였습니다.
+
+* [jpa 스터디 1차](./files/jpa-study-1차.md)
+  * jpa의 동작원리 및 영속성 컨텍스트
+* [jpa 스터디 2차](./files/jpa-study-2차.md)
+  * 연관관계 mapping과 다양한 annotation
+* [jpa 스터디 3차](./files/jpa-study-3차.md)
+  * proxy와 지연로딩. N+1문제
+* [jpa 스터디 4차](./files/jpa-study-4차.md)
+  * Spring data jpa
+
+## 이번 프로트에서의 기술적 목표
+
+1. 회원 인증(소셜 로그인, JWT) : spring security
+2. open api에서 받아오는 다량의 데이터 저장 및 필요 데이터 반환
+3. open api 데이터 갱신 자동화 : quartz
+4. 배포 및 배포 자동화 : nginx, jenkins, docker
+
+## coding-convention
+
+> 간단한 코딩 컨벤션을 두고 프로젝트를 진행하였습니다.
+
+* [코딩 컨벤션](./backend-convention.md)

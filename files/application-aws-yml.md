@@ -1,3 +1,4 @@
+```java
 cloud:
   aws:
     s3:
@@ -9,3 +10,4 @@ cloud:
       secretKey: SECRET-KEY
     stack:
       auto: false
+```
