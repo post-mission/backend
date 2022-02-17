@@ -33,13 +33,13 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## jpa 
 
-* [jpa 스터디 1차](./files/jpa-스터디-1차.md)
+* [jpa 스터디 1차](./files/jpa-study-1차.md)
   * jpa의 동작원리 및 영속성 컨텍스트
-* [jpa 스터디 2차](./files/jpa-스터디-2차.md)
+* [jpa 스터디 2차](./files/jpa-study-2차.md)
   * 연관관계 mapping과 다양한 annotation
-* [jpa 스터디 3차](./files/jpa-스터디-3차.md)
+* [jpa 스터디 3차](./files/jpa-study-3차.md)
   * proxy와 지연로딩. N+1문제
-* [jpa 스터디 4차](./files/jpa-스터디-4차.md)
+* [jpa 스터디 4차](./files/jpa-study-4차.md)
   * Spring data jpa
 
 ## 서버 배포 구조
