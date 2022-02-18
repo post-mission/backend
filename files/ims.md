@@ -1,5 +1,10 @@
-# 프로젝트에서의 이슈 -1)
-#postmission/issue
+# 회고
+
+* 백엔드 설계의 중요성
+    * api 설계나, 백엔드 명세서를 촘촘하게 하지 않고 프로젝트를 시작했는데, 그렇게 하니까 프론트 쪽에서 힘들어 했던 것 같다.
+* devops 자동 배포
+
+# 프로젝트에서의 이슈 
 
 ## CORS 이슈
 * cors 관련 에러가 떴다.
@@ -43,27 +48,7 @@ config.setAllowedOrigins(List.of("http://localhost:3000","http://i6a302.p.ssafy.
 * [Invalid host header 오류](https://bytrustu.tistory.com/73)
 * [REACT Proxying API Requests in Development : 네이버 블로그](https://m.blog.naver.com/qhdqhdekd261/222015506512)
 
-* 실행화면
-[image:95B97FD3-08F6-4619-AD75-9D2A200501AA-3778-000000A7E7C5ADF9/9000543D-1374-4398-9658-ADD024EE8AD8.png]
-
-* 구글링을 해 본 결과, react에서 도메인을 통해 접근 시 발생할 수 있는 에러임을 확인
-* npm run start 하는 것으로는 방법 못 찾겠어서, npm run build 해서 build 파일 생성하고, 3000번 들어왔을 때 build 파일 출력하는 식으로 해결했다.
-	* ** Devops 작성 파일 확인 **
-* 뭐 설정하다가 접속하니까 돼 있었다.
-* [Nginx React 프로젝트 배포하는 방법](https://sihus.tistory.com/31)
-* sudo vi /etc/nginx/sites-enabled/default
-```
-server {
-   listen 3000;
-   location / {
-      root /home/ubuntu/app-deploy/build;
-      index index.html;
-      try_files $uri $uri/ /index.html;
-   }
-}
-```
-
-## ** invalid host header 최종 해결 **
+### ** invalid host header 최종 해결 **
 * invalid host header 에러는 pacakage.json에 proxy를 명시해주면 생긴다.
 * nginx 를 통해 80 to 3000으로 연결하면 없어지지 않을까 생각했다.
 * [Nginx로 React를 배포하는 방법](https://codechacha.com/ko/deploy-react-with-nginx/)
