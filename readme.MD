@@ -117,4 +117,4 @@ ___
 
 * [임형준](./files/ims.md)
 * [배용한](./files/byh.md)
-* [강동석](./files/.md)
+* [강동석](./files/.kdsmd)
