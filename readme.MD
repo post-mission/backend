@@ -20,10 +20,9 @@ java -jar [snapshot.jar]
 > 보안상의 이유로 아래 파일은 빼놓고 소스코드를 올려 두었습니다. 아래 파일을 `src > main > resources` 밑에 추가해주시고 실행해주시면 됩니다.
 
 * [application.yml sample](./files/application-yml.md)
+  * 위 파일안의 DB 설정과 g-mail 계정 값을 입력해주시면 됩니다.
 * [application-aws.yml sample](./files/application-aws-yml.md)
-
-* application.yml에서는 DB 설정과 g-mail 계정 값을 입력해주시면 됩니다.
-* application-aws.yml 에서는 S3와 연동된 사용자 정보를 입력해주시면 됩니다.
+  * 위 파일안의 S3와 연동된 사용자 정보를 입력해주시면 됩니다.
 
 ### MusicalController.java
 
