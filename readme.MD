@@ -81,7 +81,8 @@ implementation 'org.springframework.boot:spring-boot-starter-quartz'
 
 ![이미지](./files/structure.png)
 
-> 원래는 위와 같은 배포 자동화를 구현하려고 했으나, 프로젝트 시간상의 문제로 배포 자동화는 구현하지 못하였습니다.
+> 위와 같은 구조의 배포 자동화를 시도하였습니다. 
+> 프로젝트 시간상의 문제와 여러 에러로 인해 구현하지는 못하였습니다.
 
 * [출처 블로그](https://velog.io/@haeny01/AWS-Jenkins%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-Docker-x-SpringBoot-CICD-%EA%B5%AC%EC%B6%95)
 
@@ -99,8 +100,8 @@ implementation 'org.springframework.boot:spring-boot-starter-quartz'
 
 3. 임형준
 
-* 회원 인증 처리 (spring security)
-* 배포 관리
+* 회원 관련 api 개발
+* 배포 담당
 
 ___
 
