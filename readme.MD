@@ -13,12 +13,29 @@ git clone https://github.com/post-mission/backend.git
 java -jar [snapshot.jar]
 ```
 
+## 인증관련 
+
 ### application.yml
 
 > 보안상의 이유로 아래 파일은 빼놓고 소스코드를 올려 두었습니다. 아래 파일을 `src > main > resources` 밑에 추가해주시고 실행해주시면 됩니다.
 
 * [application.yml sample](./files/application-yml.md)
 * [application-aws.yml sample](./files/application-aws-yml.md)
+
+* application.yml에서는 DB 설정과 g-mail 계정 값을 입력해주시면 됩니다.
+* application-aws.yml 에서는 S3와 연동된 사용자 정보를 입력해주시면 됩니다.
+
+### MusicalController.java
+
+```java
+public class MusicalController {
+    private final String url = "http://www.kopis.or.kr/openApi/restful/pblprfr";
+    private final String SERVICE_KEY = "KOPIS에서 발급받은 서비스 키";
+    ...
+```
+
+* MuscialController에서 KOPIS에서 발급받은 서비스키를 입력해주시면 됩니다.
+
 
 ## erd diagram
 
