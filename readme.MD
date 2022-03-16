@@ -81,7 +81,6 @@ implementation 'org.springframework.boot:spring-boot-starter-quartz'
 ![이미지](./files/structure.png)
 
 > 위와 같은 구조의 배포 자동화를 시도하였습니다. 
-> 프로젝트 시간상의 문제와 여러 에러로 인해 구현하지는 못하였습니다.
 
 * [출처 블로그](https://velog.io/@haeny01/AWS-Jenkins%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-Docker-x-SpringBoot-CICD-%EA%B5%AC%EC%B6%95)
 
